@@ -454,3 +454,359 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
 	... 32 common frames omitted
 
+2020-05-01 03:41:09.462  INFO 8952 --- [main] c.i.p.merchants.MerchantsApplication     : Starting MerchantsApplication on DESKTOP-V0J78SK with PID 8952 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-01 03:41:09.465  INFO 8952 --- [main] c.i.p.merchants.MerchantsApplication     : No active profile set, falling back to default profiles: default
+2020-05-01 03:41:09.508  INFO 8952 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@353d0772: startup date [Fri May 01 03:41:09 PDT 2020]; root of context hierarchy
+2020-05-01 03:41:10.496  INFO 8952 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$c6da9b74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 03:41:10.837  INFO 8952 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9527 (http)
+2020-05-01 03:41:10.845  INFO 8952 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-01 03:41:10.846  INFO 8952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-05-01 03:41:10.969  INFO 8952 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-01 03:41:10.970  INFO 8952 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1462 ms
+2020-05-01 03:41:11.122  INFO 8952 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-01 03:41:11.126  INFO 8952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-01 03:41:11.127  INFO 8952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-01 03:41:11.127  INFO 8952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-01 03:41:11.127  INFO 8952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-01 03:41:12.121  INFO 8952 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-01 03:41:12.135  INFO 8952 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-01 03:41:12.199  INFO 8952 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-01 03:41:12.200  INFO 8952 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-01 03:41:12.202  INFO 8952 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-01 03:41:12.247  INFO 8952 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-01 03:41:12.328  INFO 8952 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-01 03:41:12.557  INFO 8952 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 03:41:12.816  INFO 8952 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@353d0772: startup date [Fri May 01 03:41:09 PDT 2020]; root of context hierarchy
+2020-05-01 03:41:12.877  INFO 8952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-01 03:41:12.879  INFO 8952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-01 03:41:12.912  INFO 8952 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 03:41:12.913  INFO 8952 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 03:41:12.958  INFO 8952 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 03:41:13.328  INFO 8952 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-05-01 03:41:13.338  INFO 8952 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 03:41:13.380  INFO 8952 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9527 (http)
+2020-05-01 03:41:13.384  INFO 8952 --- [main] c.i.p.merchants.MerchantsApplication     : Started MerchantsApplication in 4.416 seconds (JVM running for 5.304)
+2020-05-01 03:41:21.008  INFO 27212 --- [main] c.i.p.merchants.MerchantsApplication     : Starting MerchantsApplication on DESKTOP-V0J78SK with PID 27212 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-01 03:41:21.010  INFO 27212 --- [main] c.i.p.merchants.MerchantsApplication     : No active profile set, falling back to default profiles: default
+2020-05-01 03:41:21.044  INFO 27212 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e056f20: startup date [Fri May 01 03:41:21 PDT 2020]; root of context hierarchy
+2020-05-01 03:41:22.025  INFO 27212 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$b31e2d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 03:41:22.283  INFO 27212 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9527 (http)
+2020-05-01 03:41:22.291  INFO 27212 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-01 03:41:22.292  INFO 27212 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-05-01 03:41:22.455  INFO 27212 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-01 03:41:22.455  INFO 27212 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1411 ms
+2020-05-01 03:41:22.586  INFO 27212 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-01 03:41:22.589  INFO 27212 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-01 03:41:22.590  INFO 27212 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-01 03:41:22.590  INFO 27212 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-01 03:41:22.590  INFO 27212 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-01 03:41:23.524  INFO 27212 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-01 03:41:23.535  INFO 27212 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-01 03:41:23.588  INFO 27212 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-01 03:41:23.589  INFO 27212 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-01 03:41:23.590  INFO 27212 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-01 03:41:23.635  INFO 27212 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-01 03:41:23.712  INFO 27212 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-01 03:41:23.948  INFO 27212 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 03:41:24.189  INFO 27212 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e056f20: startup date [Fri May 01 03:41:21 PDT 2020]; root of context hierarchy
+2020-05-01 03:41:24.247  INFO 27212 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-01 03:41:24.248  INFO 27212 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-01 03:41:24.275  INFO 27212 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 03:41:24.275  INFO 27212 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 03:41:24.307  INFO 27212 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 03:41:24.602  INFO 27212 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-05-01 03:41:24.609  INFO 27212 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 03:41:24.647  INFO 27212 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9527 (http)
+2020-05-01 03:41:24.651  INFO 27212 --- [main] c.i.p.merchants.MerchantsApplication     : Started MerchantsApplication in 4.019 seconds (JVM running for 5.091)
+2020-05-01 03:51:34.716  INFO 23652 --- [main] c.i.p.merchants.MerchantsApplication     : Starting MerchantsApplication on DESKTOP-V0J78SK with PID 23652 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-01 03:51:34.719  INFO 23652 --- [main] c.i.p.merchants.MerchantsApplication     : No active profile set, falling back to default profiles: default
+2020-05-01 03:51:34.755  INFO 23652 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@353d0772: startup date [Fri May 01 03:51:34 PDT 2020]; root of context hierarchy
+2020-05-01 03:52:47.686  INFO 5144 --- [main] c.i.p.merchants.MerchantsApplication     : Starting MerchantsApplication on DESKTOP-V0J78SK with PID 5144 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-01 03:52:47.690  INFO 5144 --- [main] c.i.p.merchants.MerchantsApplication     : No active profile set, falling back to default profiles: default
+2020-05-01 03:52:47.732  INFO 5144 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@353d0772: startup date [Fri May 01 03:52:47 PDT 2020]; root of context hierarchy
+2020-05-01 03:52:48.731  INFO 5144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$c6da9b74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 03:52:49.007  INFO 5144 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9527 (http)
+2020-05-01 03:52:49.017  INFO 5144 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-01 03:52:49.018  INFO 5144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-05-01 03:52:49.147  INFO 5144 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-01 03:52:49.148  INFO 5144 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1416 ms
+2020-05-01 03:52:49.284  INFO 5144 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-01 03:52:49.288  INFO 5144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-01 03:52:49.288  INFO 5144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-01 03:52:49.289  INFO 5144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-01 03:52:49.289  INFO 5144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-01 03:52:50.196  INFO 5144 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-01 03:52:50.208  INFO 5144 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-01 03:52:50.262  INFO 5144 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-01 03:52:50.263  INFO 5144 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-01 03:52:50.265  INFO 5144 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-01 03:52:50.311  INFO 5144 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-01 03:52:50.424  INFO 5144 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-01 03:52:50.652  INFO 5144 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 03:52:50.893  INFO 5144 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@353d0772: startup date [Fri May 01 03:52:47 PDT 2020]; root of context hierarchy
+2020-05-01 03:52:50.952  INFO 5144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-01 03:52:50.953  INFO 5144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-01 03:52:50.981  INFO 5144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 03:52:50.982  INFO 5144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 03:52:51.014  INFO 5144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 03:52:51.305  INFO 5144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-05-01 03:52:51.312  INFO 5144 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 03:52:51.354  INFO 5144 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9527 (http)
+2020-05-01 03:52:51.358  INFO 5144 --- [main] c.i.p.merchants.MerchantsApplication     : Started MerchantsApplication in 4.092 seconds (JVM running for 4.983)
+2020-05-01 03:56:52.452  INFO 14892 --- [main] c.i.p.merchants.MerchantsApplication     : Starting MerchantsApplication on DESKTOP-V0J78SK with PID 14892 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-01 03:56:52.456  INFO 14892 --- [main] c.i.p.merchants.MerchantsApplication     : No active profile set, falling back to default profiles: default
+2020-05-01 03:56:52.494  INFO 14892 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@353d0772: startup date [Fri May 01 03:56:52 PDT 2020]; root of context hierarchy
+2020-05-01 03:56:53.503  INFO 14892 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$7488001f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 03:56:53.764  INFO 14892 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9527 (http)
+2020-05-01 03:56:53.773  INFO 14892 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-01 03:56:53.774  INFO 14892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-05-01 03:56:53.883  INFO 14892 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-01 03:56:53.884  INFO 14892 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1390 ms
+2020-05-01 03:56:54.024  INFO 14892 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-01 03:56:54.028  INFO 14892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-01 03:56:54.028  INFO 14892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-01 03:56:54.029  INFO 14892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-01 03:56:54.029  INFO 14892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-01 03:56:55.035  INFO 14892 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-01 03:56:55.046  INFO 14892 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-01 03:56:55.101  INFO 14892 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-01 03:56:55.102  INFO 14892 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-01 03:56:55.103  INFO 14892 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-01 03:56:55.148  INFO 14892 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-01 03:56:55.228  INFO 14892 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-01 03:56:55.472  INFO 14892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 03:56:55.724  INFO 14892 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@353d0772: startup date [Fri May 01 03:56:52 PDT 2020]; root of context hierarchy
+2020-05-01 03:56:55.783  INFO 14892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-01 03:56:55.784  INFO 14892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-01 03:56:55.812  INFO 14892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 03:56:55.812  INFO 14892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 03:56:55.844  INFO 14892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 03:56:56.176  INFO 14892 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-05-01 03:56:56.184  INFO 14892 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 03:56:56.222  INFO 14892 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9527 (http)
+2020-05-01 03:56:56.227  INFO 14892 --- [main] c.i.p.merchants.MerchantsApplication     : Started MerchantsApplication in 4.124 seconds (JVM running for 4.989)
+2020-05-01 04:07:07.145  INFO 27208 --- [main] c.i.p.merchants.MerchantsApplication     : Starting MerchantsApplication on DESKTOP-V0J78SK with PID 27208 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-01 04:07:07.148  INFO 27208 --- [main] c.i.p.merchants.MerchantsApplication     : No active profile set, falling back to default profiles: default
+2020-05-01 04:07:07.184  INFO 27208 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@353d0772: startup date [Fri May 01 04:07:07 PDT 2020]; root of context hierarchy
+2020-05-01 04:07:08.300  INFO 27208 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$afd216b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 04:07:08.566  INFO 27208 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9527 (http)
+2020-05-01 04:07:08.575  INFO 27208 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-01 04:07:08.576  INFO 27208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-05-01 04:07:08.682  INFO 27208 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-01 04:07:08.682  INFO 27208 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1498 ms
+2020-05-01 04:07:08.820  INFO 27208 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-01 04:07:08.823  INFO 27208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-01 04:07:08.823  INFO 27208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-01 04:07:08.824  INFO 27208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-01 04:07:08.824  INFO 27208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-01 04:07:09.695  INFO 27208 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:07:09.707  INFO 27208 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-01 04:07:09.764  INFO 27208 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-01 04:07:09.765  INFO 27208 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-01 04:07:09.767  INFO 27208 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-01 04:07:09.812  INFO 27208 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-01 04:07:09.927  INFO 27208 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-01 04:07:11.339  INFO 27208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:07:12.465  INFO 27208 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@353d0772: startup date [Fri May 01 04:07:07 PDT 2020]; root of context hierarchy
+2020-05-01 04:07:12.526  INFO 27208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-01 04:07:12.527  INFO 27208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-01 04:07:12.557  INFO 27208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 04:07:12.557  INFO 27208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 04:07:12.598  INFO 27208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 04:07:12.875  INFO 27208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-05-01 04:07:12.883  INFO 27208 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 04:07:12.921  INFO 27208 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9527 (http)
+2020-05-01 04:07:12.925  INFO 27208 --- [main] c.i.p.merchants.MerchantsApplication     : Started MerchantsApplication in 6.206 seconds (JVM running for 7.191)
+2020-05-01 04:12:48.970  INFO 19904 --- [main] c.i.p.merchants.MerchantsApplication     : Starting MerchantsApplication on DESKTOP-V0J78SK with PID 19904 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-01 04:12:48.973  INFO 19904 --- [main] c.i.p.merchants.MerchantsApplication     : No active profile set, falling back to default profiles: default
+2020-05-01 04:12:49.014  INFO 19904 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@353d0772: startup date [Fri May 01 04:12:49 PDT 2020]; root of context hierarchy
+2020-05-01 04:12:50.049  INFO 19904 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$7f06831e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 04:12:50.318  INFO 19904 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9527 (http)
+2020-05-01 04:12:50.325  INFO 19904 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-01 04:12:50.326  INFO 19904 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-05-01 04:12:50.443  INFO 19904 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-01 04:12:50.444  INFO 19904 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1430 ms
+2020-05-01 04:12:50.622  INFO 19904 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-01 04:12:50.625  INFO 19904 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-01 04:12:50.626  INFO 19904 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-01 04:12:50.626  INFO 19904 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-01 04:12:50.626  INFO 19904 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-01 04:12:51.501  INFO 19904 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:12:51.513  INFO 19904 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-01 04:12:51.567  INFO 19904 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-01 04:12:51.578  INFO 19904 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-01 04:12:51.579  INFO 19904 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-01 04:12:51.613  INFO 19904 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-01 04:12:51.755  INFO 19904 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-01 04:12:52.158  INFO 19904 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:12:52.634  INFO 19904 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@353d0772: startup date [Fri May 01 04:12:49 PDT 2020]; root of context hierarchy
+2020-05-01 04:12:52.693  INFO 19904 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-01 04:12:52.695  INFO 19904 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-01 04:12:52.724  INFO 19904 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 04:12:52.724  INFO 19904 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 04:12:52.761  INFO 19904 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-01 04:12:53.025  INFO 19904 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-05-01 04:12:53.031  INFO 19904 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 04:12:53.071  INFO 19904 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9527 (http)
+2020-05-01 04:12:53.075  INFO 19904 --- [main] c.i.p.merchants.MerchantsApplication     : Started MerchantsApplication in 4.484 seconds (JVM running for 5.383)
+2020-05-01 04:13:13.869  INFO 21080 --- [main] c.i.p.m.service.MerchantsServTest        : Starting MerchantsServTest on DESKTOP-V0J78SK with PID 21080 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-01 04:13:13.870  INFO 21080 --- [main] c.i.p.m.service.MerchantsServTest        : No active profile set, falling back to default profiles: default
+2020-05-01 04:13:13.909  INFO 21080 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@290222c1: startup date [Fri May 01 04:13:13 PDT 2020]; root of context hierarchy
+2020-05-01 04:13:15.384  INFO 21080 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$90ae7d4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 04:13:17.222  INFO 21080 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:13:17.266  INFO 21080 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-01 04:13:17.359  INFO 21080 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-01 04:13:17.361  INFO 21080 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-01 04:13:17.364  INFO 21080 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-01 04:13:17.462  INFO 21080 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-01 04:13:17.834  INFO 21080 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-01 04:13:18.435  INFO 21080 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:13:19.316  INFO 21080 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 04:13:19.327  INFO 21080 --- [main] c.i.p.m.service.MerchantsServTest        : Started MerchantsServTest in 5.993 seconds (JVM running for 7.447)
+2020-05-01 04:13:19.541  INFO 21080 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-01 04:13:20.206  WARN 21080 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2020-05-01 04:13:20.207 ERROR 21080 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'passbook.merchants' doesn't exist
+2020-05-01 04:13:20.305  INFO 21080 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@290222c1: startup date [Fri May 01 04:13:13 PDT 2020]; root of context hierarchy
+2020-05-01 04:13:20.307  INFO 21080 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-05-01 04:13:20.308  INFO 21080 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-01 04:13:20.309  INFO 21080 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:20:09.186  INFO 33096 --- [main] c.i.p.m.service.MerchantsServTest        : Starting MerchantsServTest on DESKTOP-V0J78SK with PID 33096 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-01 04:20:09.187  INFO 33096 --- [main] c.i.p.m.service.MerchantsServTest        : No active profile set, falling back to default profiles: default
+2020-05-01 04:20:09.217  INFO 33096 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@290222c1: startup date [Fri May 01 04:20:09 PDT 2020]; root of context hierarchy
+2020-05-01 04:20:10.536  INFO 33096 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$91b6e544] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 04:20:12.148  INFO 33096 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:20:12.168  INFO 33096 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-01 04:20:12.259  INFO 33096 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-01 04:20:12.260  INFO 33096 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-01 04:20:12.262  INFO 33096 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-01 04:20:12.316  INFO 33096 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-01 04:20:12.582  INFO 33096 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-01 04:20:13.151  INFO 33096 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:20:13.966  INFO 33096 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 04:20:13.980  INFO 33096 --- [main] c.i.p.m.service.MerchantsServTest        : Started MerchantsServTest in 5.241 seconds (JVM running for 6.287)
+2020-05-01 04:20:14.070  INFO 33096 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-01 04:20:15.084  INFO 33096 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@290222c1: startup date [Fri May 01 04:20:09 PDT 2020]; root of context hierarchy
+2020-05-01 04:20:15.086  INFO 33096 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-05-01 04:20:15.087  INFO 33096 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-01 04:20:15.088  INFO 33096 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:20:52.071  INFO 20996 --- [main] c.i.p.m.service.MerchantsServTest        : Starting MerchantsServTest on DESKTOP-V0J78SK with PID 20996 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-01 04:20:52.074  INFO 20996 --- [main] c.i.p.m.service.MerchantsServTest        : No active profile set, falling back to default profiles: default
+2020-05-01 04:20:52.103  INFO 20996 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@290222c1: startup date [Fri May 01 04:20:52 PDT 2020]; root of context hierarchy
+2020-05-01 04:20:53.410  INFO 20996 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$74510ed8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 04:20:55.016  INFO 20996 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:20:55.035  INFO 20996 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-01 04:20:55.124  INFO 20996 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-01 04:20:55.125  INFO 20996 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-01 04:20:55.127  INFO 20996 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-01 04:20:55.178  INFO 20996 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-01 04:20:55.410  INFO 20996 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-01 04:20:55.944  INFO 20996 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:20:56.750  INFO 20996 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 04:20:56.762  INFO 20996 --- [main] c.i.p.m.service.MerchantsServTest        : Started MerchantsServTest in 5.179 seconds (JVM running for 6.098)
+2020-05-01 04:20:56.850  INFO 20996 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-01 04:20:57.203  INFO 20996 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@290222c1: startup date [Fri May 01 04:20:52 PDT 2020]; root of context hierarchy
+2020-05-01 04:20:57.205  INFO 20996 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-05-01 04:20:57.206  INFO 20996 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-01 04:20:57.207  INFO 20996 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:23:06.075  INFO 4304 --- [main] c.i.p.m.service.MerchantsServTest        : Starting MerchantsServTest on DESKTOP-V0J78SK with PID 4304 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-01 04:23:06.076  INFO 4304 --- [main] c.i.p.m.service.MerchantsServTest        : No active profile set, falling back to default profiles: default
+2020-05-01 04:23:06.106  INFO 4304 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@290222c1: startup date [Fri May 01 04:23:06 PDT 2020]; root of context hierarchy
+2020-05-01 04:23:07.465  INFO 4304 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$3c0d04cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 04:23:09.045  INFO 4304 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:23:09.063  INFO 4304 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-01 04:23:09.148  INFO 4304 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-01 04:23:09.150  INFO 4304 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-01 04:23:09.152  INFO 4304 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-01 04:23:09.200  INFO 4304 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-01 04:23:09.468  INFO 4304 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-01 04:23:10.075  INFO 4304 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 04:23:10.936  INFO 4304 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 04:23:10.949  INFO 4304 --- [main] c.i.p.m.service.MerchantsServTest        : Started MerchantsServTest in 5.379 seconds (JVM running for 6.414)
+2020-05-01 04:23:11.043  INFO 4304 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-01 04:23:11.524  INFO 4304 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@290222c1: startup date [Fri May 01 04:23:06 PDT 2020]; root of context hierarchy
+2020-05-01 04:23:11.527  INFO 4304 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-05-01 04:23:11.528  INFO 4304 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-01 04:23:11.529  INFO 4304 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 05:28:21.261  INFO 8124 --- [main] c.i.p.m.service.MerchantsServTest        : Starting MerchantsServTest on DESKTOP-V0J78SK with PID 8124 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-01 05:28:21.262  INFO 8124 --- [main] c.i.p.m.service.MerchantsServTest        : No active profile set, falling back to default profiles: default
+2020-05-01 05:28:21.289  INFO 8124 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@290222c1: startup date [Fri May 01 05:28:21 PDT 2020]; root of context hierarchy
+2020-05-01 05:28:22.708  INFO 8124 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$89768208] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 05:28:24.222  INFO 8124 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-01 05:28:24.240  INFO 8124 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-01 05:28:24.327  INFO 8124 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-01 05:28:24.329  INFO 8124 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-01 05:28:24.330  INFO 8124 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-01 05:28:24.378  INFO 8124 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-01 05:28:24.614  INFO 8124 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-01 05:28:25.155  INFO 8124 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 05:28:25.968  INFO 8124 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 05:28:25.980  INFO 8124 --- [main] c.i.p.m.service.MerchantsServTest        : Started MerchantsServTest in 5.214 seconds (JVM running for 6.181)
+2020-05-01 05:28:26.069  INFO 8124 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-01 05:28:26.488  INFO 8124 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@290222c1: startup date [Fri May 01 05:28:21 PDT 2020]; root of context hierarchy
+2020-05-01 05:28:26.489  INFO 8124 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-05-01 05:28:26.490  INFO 8124 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-01 05:28:26.492  INFO 8124 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 05:28:54.141  INFO 25480 --- [main] c.i.p.m.service.MerchantsServTest        : Starting MerchantsServTest on DESKTOP-V0J78SK with PID 25480 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-01 05:28:54.142  INFO 25480 --- [main] c.i.p.m.service.MerchantsServTest        : No active profile set, falling back to default profiles: default
+2020-05-01 05:28:54.179  INFO 25480 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@729d991e: startup date [Fri May 01 05:28:54 PDT 2020]; root of context hierarchy
+2020-05-01 05:28:55.709  INFO 25480 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$9acff369] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 05:28:57.266  INFO 25480 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-01 05:28:57.288  INFO 25480 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-01 05:28:57.381  INFO 25480 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-01 05:28:57.383  INFO 25480 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-01 05:28:57.386  INFO 25480 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-01 05:28:57.437  INFO 25480 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-01 05:28:57.678  INFO 25480 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-01 05:28:58.247  INFO 25480 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 05:28:58.997  INFO 25480 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 05:28:59.008  INFO 25480 --- [main] c.i.p.m.service.MerchantsServTest        : Started MerchantsServTest in 5.402 seconds (JVM running for 6.372)
+2020-05-01 05:28:59.092  INFO 25480 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-01 05:28:59.510  INFO 25480 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@729d991e: startup date [Fri May 01 05:28:54 PDT 2020]; root of context hierarchy
+2020-05-01 05:28:59.512  INFO 25480 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-05-01 05:28:59.513  INFO 25480 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-01 05:28:59.514  INFO 25480 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 06:07:34.681  INFO 27700 --- [main] c.i.p.m.service.MerchantsServTest        : Starting MerchantsServTest on DESKTOP-V0J78SK with PID 27700 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-01 06:07:34.683  INFO 27700 --- [main] c.i.p.m.service.MerchantsServTest        : No active profile set, falling back to default profiles: default
+2020-05-01 06:07:34.712  INFO 27700 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@729d991e: startup date [Fri May 01 06:07:34 PDT 2020]; root of context hierarchy
+2020-05-01 06:07:35.938  INFO 27700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$dad08c3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 06:07:37.543  INFO 27700 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-01 06:07:37.562  INFO 27700 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-01 06:07:37.640  INFO 27700 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-01 06:07:37.642  INFO 27700 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-01 06:07:37.644  INFO 27700 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-01 06:07:37.688  INFO 27700 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-01 06:07:37.918  INFO 27700 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-01 06:07:38.432  INFO 27700 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-01 06:07:39.198  INFO 27700 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-01 06:07:39.207  INFO 27700 --- [main] c.i.p.m.service.MerchantsServTest        : Started MerchantsServTest in 5.059 seconds (JVM running for 6.057)
+2020-05-01 06:07:39.290  INFO 27700 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-01 06:07:39.736  INFO 27700 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@729d991e: startup date [Fri May 01 06:07:34 PDT 2020]; root of context hierarchy
+2020-05-01 06:07:39.739  INFO 27700 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-05-01 06:07:39.739  INFO 27700 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-01 06:07:39.741  INFO 27700 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
