@@ -33,7 +33,7 @@ public class MerchantsServTest {
     public void testCreateMerchantServ() {
 
         CreateMerchantsRequest request = new CreateMerchantsRequest();
-        request.setName("test2");
+        request.setName("test3");
         request.setLogoUrl("www.imooc.com");
         request.setBusinessLicenseUrl("www.imooc.com");
         request.setPhone("1234567890");
@@ -41,4 +41,31 @@ public class MerchantsServTest {
 
         System.out.println(JSON.toJSONString(merchantsServ.createMerchants(request)));
     }
+
+
+    @Test
+    public void testBuildMerchantsInfoById() {
+        System.out.println(JSON.toJSONString(merchantsServ.buildMerchantsInfoById(18)));
+    }
+
+    @Test
+    public void testDropPassTemplate() {
+
+        PassTemplate passTemplate = new PassTemplate();
+        passTemplate.setId(17);
+        passTemplate.setTitle("test1");
+        passTemplate.setSummary("aaa");
+        passTemplate.setDesc("bbb");
+        passTemplate.setLimit(10000L);
+        passTemplate.setHasToken(false);
+        passTemplate.setBackground(2);
+        passTemplate.setStart(DateUtils.addDays(new Date(), -10));
+        passTemplate.setEnd(DateUtils.addDays(new Date(), 10));
+
+        System.out.println(JSON.toJSONString(
+                merchantsServ.dropPassTemplate(passTemplate)
+        ));
+    }
+
+
 }
