@@ -17,8 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <h1>商户服务 Controller</h1>
- * Created by Qinyi.
+ * Created by CQ.
  */
+
 @Slf4j
 @RestController
 @RequestMapping("/merchants")

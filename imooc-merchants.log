@@ -1495,3 +1495,279 @@ java.lang.Exception: Header 中 token错误!
 2020-05-02 21:18:45.658  INFO 37736 --- [http-nio-9527-exec-1] c.i.p.m.service.impl.MerchantsServImpl   : DropPassTemplates: {"background":1,"desc":"pppppp","end":1589268841178,"hasToken":false,"id":17,"limit":10000,"start":1587540841176,"summary":"aaa","title":"post-test1"}
 2020-05-02 21:19:10.181  INFO 37736 --- [http-nio-9527-exec-2] c.i.p.merchants.controller.MerchantsCtl  : DropPassTemplate: PassTemplate(id=18, title=post-test1, summary=aaa, desc=pppppp, limit=10000, hasToken=false, background=1, start=Wed Apr 22 00:34:01 PDT 2020, end=Tue May 12 00:34:01 PDT 2020)
 2020-05-02 21:19:10.225  INFO 37736 --- [http-nio-9527-exec-2] c.i.p.m.service.impl.MerchantsServImpl   : DropPassTemplates: {"background":1,"desc":"pppppp","end":1589268841178,"hasToken":false,"id":18,"limit":10000,"start":1587540841176,"summary":"aaa","title":"post-test1"}
+2020-05-08 04:57:23.640  INFO 24568 --- [main] c.i.p.m.service.MerchantsServTest        : Starting MerchantsServTest on DESKTOP-V0J78SK with PID 24568 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-05-08 04:57:23.660  INFO 24568 --- [main] c.i.p.m.service.MerchantsServTest        : No active profile set, falling back to default profiles: default
+2020-05-08 04:57:23.684  INFO 24568 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@47e2e487: startup date [Fri May 08 04:57:23 PDT 2020]; root of context hierarchy
+2020-05-08 04:57:25.154  INFO 24568 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$ca701711] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-08 04:57:27.234  INFO 24568 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-08 04:57:27.266  INFO 24568 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-08 04:57:27.353  INFO 24568 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-08 04:57:27.355  INFO 24568 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-08 04:57:27.357  INFO 24568 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-08 04:57:27.443  INFO 24568 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-08 04:57:27.698  INFO 24568 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-08 04:57:28.336  INFO 24568 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-08 04:57:29.263  INFO 24568 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-08 04:57:29.274  INFO 24568 --- [main] c.i.p.m.service.MerchantsServTest        : Started MerchantsServTest in 6.119 seconds (JVM running for 7.279)
+2020-05-08 04:57:29.891  INFO 24568 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-08 04:57:31.176  INFO 24568 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2020-05-08 04:57:31.227  INFO 24568 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2020-05-08 04:57:31.230  INFO 24568 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.0.1
+2020-05-08 04:57:31.231  INFO 24568 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : a7a17cdec9eaa6c5
+2020-05-08 04:57:31.387  INFO 24568 --- [main] c.i.p.m.service.impl.MerchantsServImpl   : DropPassTemplates: {"background":2,"desc":"bbb","end":1589803049386,"hasToken":false,"id":17,"limit":10000,"start":1588075049384,"summary":"aaa","title":"test1"}
+2020-05-08 04:57:31.446  INFO 24568 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@47e2e487: startup date [Fri May 08 04:57:23 PDT 2020]; root of context hierarchy
+2020-05-08 04:57:31.451  INFO 24568 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-05-08 04:57:31.451  INFO 24568 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-08 04:57:31.452  INFO 24568 --- [Thread-3] o.a.k.clients.producer.KafkaProducer     : Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2020-05-08 04:57:31.458  INFO 24568 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-03 15:12:24.932  INFO 395384 --- [main] c.i.p.merchants.MerchantsApplication     : Starting MerchantsApplication on DESKTOP-V0J78SK with PID 395384 (started by Cao Qian in C:\Users\Cao Qian\Desktop\merchants)
+2020-06-03 15:12:24.971  INFO 395384 --- [main] c.i.p.merchants.MerchantsApplication     : No active profile set, falling back to default profiles: default
+2020-06-03 15:12:25.378  INFO 395384 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48ae9b55: startup date [Wed Jun 03 15:12:25 SGT 2020]; root of context hierarchy
+2020-06-03 15:12:30.090  INFO 395384 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$a687268] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-03 15:12:30.826  INFO 395384 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9527 (http)
+2020-06-03 15:12:30.837  INFO 395384 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-06-03 15:12:30.838  INFO 395384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-06-03 15:12:31.125  INFO 395384 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-03 15:12:31.125  INFO 395384 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5747 ms
+2020-06-03 15:12:31.473  INFO 395384 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-03 15:12:31.487  INFO 395384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-03 15:12:31.488  INFO 395384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-03 15:12:31.488  INFO 395384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-03 15:12:31.488  INFO 395384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-03 15:12:39.455  INFO 395384 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-03 15:12:39.486  INFO 395384 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-03 15:12:39.716  INFO 395384 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-06-03 15:12:39.718  INFO 395384 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-06-03 15:12:39.720  INFO 395384 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-06-03 15:12:39.810  INFO 395384 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-06-03 15:12:40.256  INFO 395384 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-03 15:12:42.836  INFO 395384 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-03 15:12:43.727  INFO 395384 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48ae9b55: startup date [Wed Jun 03 15:12:25 SGT 2020]; root of context hierarchy
+2020-06-03 15:12:43.814  INFO 395384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/merchants/drop],methods=[POST]}" onto public com.imooc.passbook.merchants.vo.Response com.imooc.passbook.merchants.controller.MerchantsCtl.dropPassTemplate(com.imooc.passbook.merchants.vo.PassTemplate)
+2020-06-03 15:12:43.816  INFO 395384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/merchants/create],methods=[POST]}" onto public com.imooc.passbook.merchants.vo.Response com.imooc.passbook.merchants.controller.MerchantsCtl.createMerchants(com.imooc.passbook.merchants.vo.CreateMerchantsRequest)
+2020-06-03 15:12:43.817  INFO 395384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/merchants/{id}],methods=[GET]}" onto public com.imooc.passbook.merchants.vo.Response com.imooc.passbook.merchants.controller.MerchantsCtl.buildMerchantsInfo(java.lang.Integer)
+2020-06-03 15:12:43.819  INFO 395384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-06-03 15:12:43.819  INFO 395384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-06-03 15:12:43.851  INFO 395384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-03 15:12:43.852  INFO 395384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-03 15:12:43.908  INFO 395384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-03 15:12:44.268  INFO 395384 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-06-03 15:12:44.295  INFO 395384 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-06-03 15:12:44.412  INFO 395384 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9527 (http)
+2020-06-03 15:12:44.437  INFO 395384 --- [main] c.i.p.merchants.MerchantsApplication     : Started MerchantsApplication in 21.931 seconds (JVM running for 25.34)
+2020-06-03 15:30:29.360  INFO 395384 --- [http-nio-9527-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-06-03 15:30:29.360  INFO 395384 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-06-03 15:30:29.390  INFO 395384 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2020-06-03 15:30:29.467  INFO 395384 --- [http-nio-9527-exec-1] c.i.p.merchants.controller.MerchantsCtl  : BuildMerchantsInfo: 17
+2020-06-03 15:30:29.513  INFO 395384 --- [http-nio-9527-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-06-03 15:43:49.405  INFO 395384 --- [http-nio-9527-exec-2] c.i.p.merchants.controller.MerchantsCtl  : CreateMerchants: {"address":"北京市朝阳区","businessLicenseUrl":"www.imooc.com","logoUrl":"www.imooc.com","name":"readytogo","phone":"1234567890"}
+2020-06-03 16:14:07.574  INFO 395384 --- [http-nio-9527-exec-5] c.i.p.merchants.controller.MerchantsCtl  : DropPassTemplate: PassTemplate(id=17, title=testtest-1, summary=sssssssss, desc=readytogo, limit=1000, hasToken=true, background=1, start=Fri Jun 01 08:00:00 SGT 2018, end=Tue Jun 30 08:00:00 SGT 2020)
+2020-06-03 16:14:08.059  INFO 395384 --- [http-nio-9527-exec-5] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2020-06-03 16:14:08.215  INFO 395384 --- [http-nio-9527-exec-5] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2020-06-03 16:14:08.295  INFO 395384 --- [http-nio-9527-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.0.1
+2020-06-03 16:14:08.296  INFO 395384 --- [http-nio-9527-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : a7a17cdec9eaa6c5
+2020-06-03 16:14:08.563  INFO 395384 --- [http-nio-9527-exec-5] c.i.p.m.service.impl.MerchantsServImpl   : DropPassTemplates: {"background":1,"desc":"readytogo","end":1593475200000,"hasToken":true,"id":17,"limit":1000,"start":1527811200000,"summary":"sssssssss","title":"testtest-1"}

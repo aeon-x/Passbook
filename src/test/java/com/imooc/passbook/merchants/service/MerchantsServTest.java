@@ -40,8 +40,8 @@ public class MerchantsServTest {
         request.setAddress("sg");
 
         System.out.println(JSON.toJSONString(merchantsServ.createMerchants(request)));
-    }
 
+    }
 
     @Test
     public void testBuildMerchantsInfoById() {
@@ -65,7 +65,7 @@ public class MerchantsServTest {
         System.out.println(JSON.toJSONString(
                 merchantsServ.dropPassTemplate(passTemplate)
         ));
-    }
 
+    }
 
 }
