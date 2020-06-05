@@ -52,12 +52,12 @@ public class MerchantsServTest {
     public void testDropPassTemplate() {
 
         PassTemplate passTemplate = new PassTemplate();
-        passTemplate.setId(17);
-        passTemplate.setTitle("test1");
+        passTemplate.setId(18);
+        passTemplate.setTitle("test3");
         passTemplate.setSummary("aaa");
         passTemplate.setDesc("bbb");
         passTemplate.setLimit(10000L);
-        passTemplate.setHasToken(false);
+        passTemplate.setHasToken(true);
         passTemplate.setBackground(2);
         passTemplate.setStart(DateUtils.addDays(new Date(), -10));
         passTemplate.setEnd(DateUtils.addDays(new Date(), 10));
